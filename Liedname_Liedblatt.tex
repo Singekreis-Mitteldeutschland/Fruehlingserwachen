@@ -1,0 +1,52 @@
+\documentclass[german,a5paper, twoside]{scrreprt} %report veraltet, scrreprt neu
+%Packages
+\usepackage{geometry} %Definition Satzspiegel
+\geometry{left=2cm,right=2cm,top=2.1cm,bottom=2.2cm} 
+\usepackage[ngerman]{babel}%auch für Umlaute???
+\usepackage{bibgerm}%deutsche trennung
+\usepackage[utf8]{inputenc}%Zeichensatz
+\usepackage[T1]{fontenc}%fontsatz
+\usepackage{geometry}
+\geometry{a5paper}
+\usepackage{setspace} 
+\usepackage{musixtex} 
+\usepackage{musixguit}
+\usepackage{graphicx} %Graphiken
+\usepackage{float}
+\usepackage{placeins}
+\usepackage{pdfpages}%mehrseitige PDFs einbinden
+\usepackage{fancyhdr}%Kopfzeilen usw.
+\usepackage{tikz}
+
+\newcommand{\chort}[2]{\chord{\textbf{#1}}{#2}}
+%\newcommand{\Liedname}{Fruehlingserwachen}
+%\newcommand{\Abstand}{5mm}
+\include{Rohdaten/Hilfsdateien/Einstellungen}
+
+
+\usepackage{hyperref}
+
+\begin{document}
+\pagestyle{empty}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,inner sep=5pt] at (current page.north west)
+{\includegraphics[width=.2\textwidth]{Rohdaten/Bilder/Singekreis.png}};
+\end{tikzpicture} 
+\ifthenelse{\equal{\Lizenz}{CC-BY-SA}}{
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=south east,inner sep=5pt] at (current page.south east)
+{\includegraphics[width=.2\textwidth]{Rohdaten/Bilder/Lizenz.png}};
+\end{tikzpicture} 
+}{}
+
+\begin{figure}[H]
+\includepdf[trim=00mm 0mm 00mm 00mm ,pagecommand={},pages=1,width=1.3\textwidth]{Rohdaten/Noten/\Liedname _Noten.pdf}
+\end{figure}
+\vspace{\Abstand}
+
+\begin{song} \noindent
+\input{Rohdaten/Noten/Strophen.tex}
+\end{song}
+
+
+\end{document}
