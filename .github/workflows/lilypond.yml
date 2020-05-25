@@ -6,9 +6,7 @@ name: Durchlauftest
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
   pull_request:
-    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -28,19 +26,19 @@ jobs:
         sudo apt-get update
         sudo apt-get install lilypond
         cd Rohdaten/Noten
-        lilypond Liedname_Noten.ly 
+        lilypond Fruehlingserwachen_Noten.ly 
     - name: Download a Build Artifact
       uses: actions/upload-artifact@v2
       with:
-        path: Rohdaten/Noten/Liedname_Noten.pdf
+        path: Rohdaten/Noten/Fruehlingserwachen_Noten.pdf
     - name: Compile LaTeX document
       uses: xu-cheng/latex-action@v2
       with:
-        root_file: Liedname_Liedblatt.tex
+        root_file: Fruehlingserwachen_Liedblatt.tex
     - name: Download a Build Artifact
       uses: actions/upload-artifact@v2
       with:
-        path: Liedname_Liedblatt.pdf
+        path: Fruehlingserwachen_Liedblatt.pdf
        
   
         
