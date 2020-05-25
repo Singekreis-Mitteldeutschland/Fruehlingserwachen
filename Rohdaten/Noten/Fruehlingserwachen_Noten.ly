@@ -30,10 +30,10 @@ Akkorde = \chords { \time 6/8  \set chordNameLowercaseMinor = ##t  \germanChords
 \score {
 \new ChoirStaff <<
       \Akkorde
-\transpose f c'
+
     \new Staff {
       \new Voice = "melody" {
-\relative c {\key c\major  \time 3/4
+\relative c' {\key c\major  \time 3/4
     \repeat volta 2 {a'2 b4 c2 c4 d4 c4 b4} \alternative{ { a2 e4 } {a4 r4 e'4}} f4 e4 d4
     c4 c4 c4 b4 b4 b4 e2 r4\bar "||"  
  \time 2/2          \tempo \markup {
