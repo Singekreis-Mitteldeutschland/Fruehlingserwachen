@@ -1,7 +1,7 @@
 \documentclass[german,a5paper, twoside]{scrreprt} %report veraltet, scrreprt neu
 %Packages
 \usepackage{geometry} %Definition Satzspiegel
-\geometry{left=2cm,right=2cm,top=2.1cm,bottom=2.2cm} 
+\geometry{left=2cm,right=2cm,top=1.5cm,bottom=2.2cm} 
 \usepackage[ngerman]{babel}%auch für Umlaute???
 \usepackage{bibgerm}%deutsche trennung
 \usepackage[utf8]{inputenc}%Zeichensatz
@@ -42,12 +42,22 @@
 \node[anchor=south west,inner sep=5pt] at (current page.south west)
 {\includegraphics[width=.15\textwidth]{Rohdaten/Bilder/Schneegloeckchen.png}};
 \end{tikzpicture}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north,inner sep=10pt] at (current page.north)
+{\includegraphics[width=.4\textwidth]{Rohdaten/Bilder/ueberschrift.png}};
+\end{tikzpicture}
+%\vspace{-2.7cm}
+%\begin{figure}[H]
+%\center
+%\includegraphics[width=0.5\textwidth]{Rohdaten/Bilder/ueberschrift.png}
+%\end{figure}
 
+%\vspace{2.7cm}
+\begin{figure}[t]
 
-\begin{figure}[H]
-\includepdf[trim=00mm 0mm 00mm 00mm ,pagecommand={},pages=1,width=1.3\textwidth]{Rohdaten/Noten/\Liedname _Noten.pdf}
+\includegraphics[trim=10mm 180mm 10mm 13mm, clip,width=1\textwidth]{Rohdaten/Noten/\Liedname _Noten.pdf}
 \end{figure}
-\vspace{\Abstand}
+\vspace{-1.2cm}
 
 \begin{song} \noindent
 \input{Rohdaten/Noten/Strophen.tex}
