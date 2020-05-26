@@ -38,6 +38,11 @@
 {\includegraphics[width=.2\textwidth]{Rohdaten/Bilder/Lizenz.png}};
 \end{tikzpicture} 
 }{}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=south west,inner sep=5pt] at (current page.south west)
+{\includegraphics[width=.15\textwidth]{Rohdaten/Bilder/Schneegloeckchen.png}};
+\end{tikzpicture}
+
 
 \begin{figure}[H]
 \includepdf[trim=00mm 0mm 00mm 00mm ,pagecommand={},pages=1,width=1.3\textwidth]{Rohdaten/Noten/\Liedname _Noten.pdf}
@@ -47,6 +52,9 @@
 \begin{song} \noindent
 \input{Rohdaten/Noten/Strophen.tex}
 \end{song}
-
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=south west,inner sep=5pt] at (current page.south west)
+{\includegraphics[width=.15\textwidth]{Rohdaten/Bilder/Schneegloeckchen.png}};
+\end{tikzpicture}
 
 \end{document}
