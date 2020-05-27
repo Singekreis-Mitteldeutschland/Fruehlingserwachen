@@ -54,7 +54,7 @@
   \set stanza = #"1." Wenn die er -- sten Blü -- ten sich öff -- nen 
     "" die Schnee -- häub -- chen schmel -- zen, die Zeit nicht mehr steht.
     Dann er -- wacht un -- s're Mo -- mo, die Welt färbt sich bunt, sie ""
-    "" Dann er -- wacht un -- s're Mo -- mo, die Welt färbt sich bunt, sie
+    Dann er -- wacht un -- s're Mo -- mo, die Welt färbt sich bunt, sie ""
 }
 \addlyrics {\large 
             und der Wind __"" lei -- _ se "" "" weht, "" "" "" ""
