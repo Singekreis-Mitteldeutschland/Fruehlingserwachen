@@ -14,10 +14,10 @@
 
 \header {
   title =  \markup {
-    \epsfile #X #40 #"../Bilder/Ueberschrift.eps"
+    \epsfile #X #30 #"../Bilder/Ueberschrift.eps"
 }			
-  composer =  "Text und Melodie: kachān (im Frühjahr 2020)"}
-  arranger =  "für momo"
+  composer = "Text und Melodie: kachān (im Frühjahr 2020)"
+  arranger = "für momo"
 }
 
 \score {
