@@ -16,8 +16,8 @@
   title =  \markup {
     \epsfile #X #40 #"../Bilder/Ueberschrift.eps"
 }			
-  composer = \markup{\raise #5 "Text und Melodie: kachān (im Frühjahr 2020)"}
-  arranger =  \markup{\raise #5 "für momo"}
+  composer =  "Text und Melodie: kachān (im Frühjahr 2020)"}
+  arranger =  "für momo"
 }
 
 \score {
