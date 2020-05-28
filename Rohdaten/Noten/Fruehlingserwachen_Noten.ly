@@ -14,7 +14,7 @@
 
 \header {
   title =  \markup {
-    \epsfile #X #30 #"/home/runner/work/Fruehlingserwachen/Fruehlingserwachen/Rohdaten/Bilder/Ueberschrift.eps"
+    \epsfile #X #30 #"../Bilder/Ueberschrift.eps"
 }			
   composer = "Text und Melodie: kachān (im Frühjahr 2020)"
   arranger = "für momo"
