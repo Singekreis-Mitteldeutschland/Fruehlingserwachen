@@ -13,7 +13,9 @@
 }
 
 \header {
-  title = "Frühlingserwachen"		%Schriftart
+  title =  \markup {
+    \epsfile #X #30 #"../Bilder/Ueberschrift.eps"
+}			
   composer = "Text und Melodie: kachān (im Frühjahr 2020)"
   arranger = "für momo"
 }
