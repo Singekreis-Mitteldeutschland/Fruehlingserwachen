@@ -1,9 +1,8 @@
-# Liedertemplate
-Hier ist eine Vorlage, mit der man Lieder schreiben kann.
+# Fruehlingserwachen
+Lied aus dem Singekreis Mitteldeutschland von kachan für momo.
 
-Für die Verwendung zunächst unter Rohdaten/Hilfsdateien/Einstellungen.tex den Liedtitel vergeben. Dieser sollte auch bei der *_Liedblatt.tex als titel verwendet werden und bei der /Rohdaten/Noten/*_Noten.ly als Titel verwendet werden.
 
-Anschließend können bei der Rohdaten/Noten/*_Noten.ly die Noten in Lilypond-Art gesetzt werden und bei der Rohdaten/Noten/Strophen.tex die Strophen wie in der Datei beschrieben gesetzt werden. Anschließend muss man nur noch die Rohdaten/Noten/*_Noten.ly übersetzen lassen (und ggf. die PDF hineinschieben) und dann die *_Liedblatt.tex übersetzen -> dies erzeugt dann eine *_Liedblatt.pdf.
+Anschließend können bei der Rohdaten/Noten/Fruehlingserwachen_Noten.ly die Noten in Lilypond-Art gesetzt werden und bei der Rohdaten/Noten/Strophen.tex die Strophen wie in der Datei beschrieben gesetzt werden. Anschließend muss man nur noch die Rohdaten/Noten/Fruehlingserwachen_Noten.ly übersetzen lassen (und ggf. die PDF hineinschieben) und dann die fruehlingserwachen_Liedblatt.tex übersetzen -> dies erzeugt dann eine fruehlingserwachen_Liedblatt.pdf.
 
 
 Shield: [![CC-BY-SA-4.0][cc-by-sa-shield]][cc-by-sa]
