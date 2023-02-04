@@ -29,7 +29,7 @@
   \repeat volta 2 {a2.:m | c | g}
   \alternative { {a:m} {a:m} }
   d:m | c | g | e |
-  
+ 
   \time 2/2
   s1 | \repeat volta 2 {a:m | c | g}
   \alternative { {a:m} {a:m} }
